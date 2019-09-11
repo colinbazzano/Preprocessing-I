@@ -134,3 +134,20 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 90%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  text-decoration: none;
+}
