@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+header {
+  width: 98%;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+.top-content {
+  margin: 0 2%;
+  background-color: white;
+  border: 2px solid #5cdb95;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.top-content img {
+  width: 30%;
+  margin: 2%;
+}
+.top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4% 1% 1% 1%;
+}
+.top-text h1 {
+  font-size: 4rem;
+  color: black;
+}
+.top-text p {
+  color: black;
+  font-size: 1.5rem;
+  padding: 1%;
+  text-align: center;
+}
+.top-text h2 {
+  font-size: 2rem;
+  padding: 1%;
+  color: black;
+}
+button {
+  margin: 2%;
+  padding: 5%;
+  background: black;
+  color: #EDF5E1;
+}
+.main-content {
+  margin: 2%;
+  display: flex;
+  border: 2px solid #5cdb95;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-content .text-content {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1%;
+}
+.main-content .text-content h2 {
+  font-size: 2rem;
+  padding: 1%;
+  padding: 5%;
+  text-decoration: underline;
+}
+#skills {
+  margin: 2% auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+#skills h3 {
+  font-size: 2rem;
+  padding: 1%;
+  padding: 3%;
+  text-decoration: underline;
+}
+#skills li {
+  padding: 2%;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bottom-content {
+  width: 50%;
+  margin: 2%;
+  border: 2px solid #5cdb95;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 95%;
+  }
+}
+.bottom-content .text-content {
+  width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1%;
+  color: black;
+}
+.bottom-content .text-content h3 {
+  font-size: 2rem;
+  padding: 1%;
+  padding: 3%;
+}
+h4 {
+  padding: 2%;
+  border-top: 1px solid black;
+}
+p {
+  padding: 1%;
+}
+.contact {
+  width: 30%;
+  margin: 2%;
+  border: 2px solid #5cdb95;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 95%;
+  }
+}
+.contact h3 {
+  font-size: 2rem;
+  padding: 1%;
+  padding: 3%;
+}
+.contact p {
+  font-size: 1.5rem;
+  padding: 1%;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 1.5%;
+  color: white;
+}
