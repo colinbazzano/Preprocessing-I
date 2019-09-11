@@ -162,7 +162,7 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  background-color: white;
+  background-color: black;
 }
 
 header {
@@ -247,6 +247,7 @@ button {
     text-align: center;
     .textSize();
     .textColor();
+    padding: 1%;
     h2 {
       .headingTextSize();
       padding: 5%;
@@ -274,22 +275,72 @@ button {
   }//this closes the list items
 }//this closes skills
 
+.bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }//this closes the media query
+}
+
 .bottom-content {
-  margin: 2%;
+  width: 50%;
   display: flex;
   border: 2px solid #5cdb95;
   background-color: @main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
     .text-content {
-      display: flex;
-      flex-direction: column;
-      width: 40%; 
+      width: 90%; 
+      text-align: center;
       .textSize();
       .textColor();
 
       h3 {
         .headingTextSize();
         padding: 3%;
-        text-decoration: underline;
+        
       }//this closes h3
     }//this closes text content
 }//this closes bottom content
+
+h4 {
+  padding: 2%;
+  border-top: 1px solid black;
+}
+
+p {
+  padding: 1%;
+}
+.contact {
+  width: 30%;
+  display: flex;
+  border: 2px solid #5cdb95;
+  background-color: @main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    .headingTextSize();
+    padding: 3%;
+    
+  }//this closes h3
+  p {
+    padding: 1%;
+    .textSize();
+    .textColor();
+  }//this closes p
+}//this closes contact
+
+footer {
+  text-align: center;
+  padding: 1.5%;
+  color: @main-color;
+}

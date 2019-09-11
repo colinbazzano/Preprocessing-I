@@ -140,7 +140,7 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  background-color: white;
+  background-color: black;
 }
 header {
   width: 98%;
@@ -218,8 +218,8 @@ button {
   width: 50%;
   text-align: center;
   font-size: 1.5rem;
-  padding: 1%;
   color: black;
+  padding: 1%;
 }
 .main-content .text-content h2 {
   font-size: 2rem;
@@ -246,16 +246,28 @@ button {
   font-size: 1.5rem;
   padding: 1%;
 }
-.bottom-content {
-  margin: 2%;
+.bottom-container {
   display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bottom-content {
+  width: 50%;
   border: 2px solid #5cdb95;
   background-color: white;
-}
-.bottom-content .text-content {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: center;
+}
+.bottom-content .text-content {
+  width: 90%;
+  text-align: center;
   font-size: 1.5rem;
   padding: 1%;
   color: black;
@@ -264,5 +276,35 @@ button {
   font-size: 2rem;
   padding: 1%;
   padding: 3%;
-  text-decoration: underline;
+}
+h4 {
+  padding: 2%;
+  border-top: 1px solid black;
+}
+p {
+  padding: 1%;
+}
+.contact {
+  width: 30%;
+  border: 2px solid #5cdb95;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h3 {
+  font-size: 2rem;
+  padding: 1%;
+  padding: 3%;
+}
+.contact p {
+  font-size: 1.5rem;
+  padding: 1%;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 1.5%;
+  color: white;
 }
