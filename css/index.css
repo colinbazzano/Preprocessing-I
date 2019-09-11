@@ -140,14 +140,61 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
+  background-color: #05386B;
 }
 header {
-  width: 90%;
+  width: 98%;
 }
 header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 header nav a {
   text-decoration: none;
+  color: #EDF5E1;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+.top-content {
+  margin: 0 2%;
+  background-color: #5CDB95;
+  border: 2px solid #EDF5E1;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.top-content img {
+  width: 30%;
+  margin: 2%;
+}
+.top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4% 1% 1% 1%;
+}
+.top-text h1 {
+  font-size: 4rem;
+  color: #EDF5E1;
+}
+.top-text p {
+  color: #EDF5E1;
+}
+.top-text h2 {
+  font-size: 2rem;
+  padding: 1%;
+  color: #EDF5E1;
+}
+button {
+  margin: 2%;
+  padding: 5%;
+  background: #05386B;
+  color: #EDF5E1;
 }

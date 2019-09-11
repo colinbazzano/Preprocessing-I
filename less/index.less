@@ -144,26 +144,85 @@ html {
 
 // ********************** UNIQUE CSS BEGINS HERE **********************
 
-@main-color: #05386B;
+@main-color: #5CDB95;
+@off-color: #05386B;
+
+.headingTextSize(){
+  font-size: 2rem;
+  padding: 1%;
+}
+.textSize(){
+  font-size: 1.5rem;
+  padding: 1%;
+}
+.textColor(){
+  color: #EDF5E1;
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
+  background-color: #05386B;
 }
 
 header {
-  width: 90%;
+  width: 98%;
   
   nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 
     a{
       text-decoration: none;
+      padding: 1%;
+      .textColor();
+      .textSize();
     }//this closes the header nav links
   }//this closes the header nav
 }//this closes the header
 
 .top-content {
-  
+  margin: 0 2%;
+  background-color: @main-color;
+  border: 2px solid #EDF5E1;
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 500px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }//this closes the media query
+
+    img {
+      width: 30%;
+      margin: 2%;
+    }//this closes the image
+  }//this closes the top content
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4% 1% 1% 1%;
+
+  h1 {
+    font-size: 4rem;
+    .textColor();
+
+  }//this closes h1
+    p{
+      .textColor();
+    }
+  h2 {
+    .headingTextSize();
+    .textColor();
+  }//this closes h2
+}//this closes top text 
+button {
+  margin: 2%;
+  padding: 5%;
+  background: @off-color;
+  .textColor();
 }
